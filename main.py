@@ -16,5 +16,9 @@ for i in range(1,15):
 
 uInput = input("Enter number id of project to run(1-15): ")
 
-os.system("python " + os.getcwd()+ "\\" + dirs[int(uInput)] + "\\app.py")
+os.chdir(dirs[int(uInput)])
+os.system("cls")
+input(dirs[int(uInput)] + "\nPress Enter to Continue")
+os.system("cls")
+os.system("python app.py")
 
